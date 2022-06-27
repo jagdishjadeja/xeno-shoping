@@ -1,0 +1,154 @@
+.navbar {
+  background-color: #232d36;
+  padding: 15px;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar .logout {
+  color: #404951;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #404951 !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+  color: #6a7177 !important;
+  font-weight: bold;
+}
+
+.shoppingListHeader {
+  color: #fff;
+  padding: 30px 190px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-toggle {
+  background: #232d36;
+  color: #fff;
+  margin-left: 20px;
+  border: none;
+}
+
+.dropdown-toggle:hover {
+  background: #232d36 !important;
+}
+
+.addItem {
+  background: #ebc942;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: auto 50px !important;
+}
+
+.addItem:hover,
+.addItem::after,
+.addItem:focus {
+  background: #ebc942;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: auto 50px !important;
+}
+
+.shoppingList {
+  color: #80868b;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.shoppingList .card {
+  background: #1c272f;
+  width: 900px;
+}
+
+.shoppingList .cardTop {
+  margin-bottom: 0.5rem !important;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-header {
+  padding: 20px 30px;
+  background-color: #2f3b45;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-header .closeBtn {
+  background: #39454e;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+.modal-header .btn-close {
+  margin: 0 !important;
+  font-size: 10px;
+}
+
+.modal-body {
+  padding: 20px 30px;
+  background: #29353f;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+  background-color: #303a42;
+  color: #575e65;
+  border: none;
+  border-radius: 2px;
+}
+
+option:focus,
+select:focus>option:checked {
+  background: #ebc942 !important;
+  color: #fff;
+}
+
+select option:hover {
+  background: #ebc942 !important;
+}
+
+.modal-body label {
+  color: #575e65;
+  font-weight: bold;
+}
+
+.modal-body .loginBtn {
+  background: #ebc942;
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media(max-width:1280px) {
+  .shoppingListHeader {
+    color: #fff;
+    padding: 30px 0px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .shoppingList {
+    color: #80868b;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .shoppingList .card {
+    background: #1c272f;
+    width: auto !important;
+  }
+}

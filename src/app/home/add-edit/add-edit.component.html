@@ -1,1 +1,44 @@
-<p>add-edit works!</p>
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+  <div class="closeBtn">
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>
+</div>
+<div class="modal-body">
+  <form [formGroup]="itemForm" (ngSubmit)="addItem()">
+    <div class="mb-3">
+      <label for="category" class="form-label"> Category </label>
+      <select class="form-select" formControlName="category">
+        <option selected>Select Category</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        placeholder="Enter your first name"
+        formControlName="name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        placeholder="Enter Description"
+        id="description"
+        formControlName="description"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn loginBtn mt-3">Save</button>
+  </form>
+</div>

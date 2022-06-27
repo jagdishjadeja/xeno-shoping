@@ -1,0 +1,71 @@
+<p>register works!</p>
+<div class="container align">
+  <div class="row logo">
+    <div class="col">
+      <img src="assets/logo.png" alt="" />
+    </div>
+  </div>
+  <div class="row loginForm">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="mb-4">Complete your profile</h4>
+
+          <form [formGroup]="registerForm" (ngSubmit)="registerSubmit()">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                placeholder="Enter your first name"
+                formControlName="firstName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter your last name"
+                formControlName="lastName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                formControlName="email"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn loginBtn mt-3"
+              style="height: 50px"
+              *ngIf="loader"
+            >
+              <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <button
+              *ngIf="!loader"
+              style="height: 50px"
+              type="submit"
+              class="btn loginBtn mt-3"
+            >
+              Next
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

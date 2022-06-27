@@ -1,5 +1,70 @@
-<h3>Welcome back</h3>
-<div class="row">
-  <input type="text" placeholder="username" />
+<div class="container align">
+  <div class="row logo">
+    <div class="col">
+      <img src="assets/logo.png" alt="" />
+    </div>
+  </div>
+  <div class="row loginForm">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="mb-4">Welcome back</h4>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                formControlName="username"
+                placeholder="Enter your username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                <input
+                  [type]="showpassword ? 'text' : 'password'"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter your password"
+                  formControlName="password"
+                />
+                <span class="input-group-text" id="basic-addon2">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    (click)="showpassword = !showpassword"
+                  >
+                    {{ showpassword ? "Hide" : "Show" }}
+                  </button>
+                </span>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn loginBtn mt-3"
+              style="height: 50px"
+              *ngIf="loading"
+            >
+              <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <button
+              type="submit"
+              class="btn loginBtn mt-3"
+              style="height: 50px"
+              *ngIf="!loading"
+            >
+              Log In
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<input type="text" placeholder="Password" />

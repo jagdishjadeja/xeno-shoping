@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "xeno-shopping"
+  },
+  "targets": {
+    "xeno-shopping": {
+      "hosting": {
+        "shopping-app": [
+          "xeno-shopping"
+        ]
+      }
+    }
   }
 }

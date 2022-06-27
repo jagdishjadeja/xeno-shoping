@@ -1,3 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/bootstrap";
+body {
+    background-color: rgba(21, 32, 41, 255);
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    height: 200px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    color: #6a6332;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.loginForm {
+    height: calc(100vh - 200px);
+}
+
+.loginForm .card {
+    background: #232d36;
+}
+
+.loginForm .card-body {
+    padding: 40px 30px;
+    width: 400px;
+}
+
+.loginForm h4 {
+    color: white;
+    text-align: center;
+}
+
+.loginForm .form-control {
+    background-color: #303a42;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.input-group-text {
+    background: #303a42;
+    color: white;
+    border: none;
+}
+
+.loginForm label {
+    color: #575e65;
+    font-weight: bold;
+}
+
+.loginForm .loginBtn {
+    background: #ebc942;
+    width: 100%;
+    border-radius: 2px;
+}
+
+@media(max-width:415px) {
+    .loginForm .card-body {
+        padding: 50px 30px;
+        width: auto !important;
+    }
+}
+
+// loader
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 13px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  

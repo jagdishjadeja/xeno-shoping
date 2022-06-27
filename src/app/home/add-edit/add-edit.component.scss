@@ -1,0 +1,58 @@
+.modal-content {
+    border: none;
+  }
+
+  .modal-header {
+    padding: 20px 30px;
+    background-color: #2f3b45;
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .modal-header .closeBtn {
+    background: #39454e;
+    padding: 1px;
+    border-radius: 4px;
+    position:absolute;
+    top:10px;
+    right:10px;
+  }
+
+  .modal-header .btn-close {
+    margin: 0 !important;
+    font-size: 10px;
+  }
+
+  .modal-body {
+    padding: 20px 30px;
+    background: #29353f;
+  }
+
+  .modal-body .form-control,
+  .modal-body .form-select {
+    background-color: #303a42;
+    color: #575e65;
+    border: none;
+    border-radius: 2px;
+  }
+
+  option:focus,
+  select:focus>option:checked {
+    background: #ebc942 !important;
+    color: #fff;
+  }
+
+  select option:hover {
+    background: #ebc942 !important;
+  }
+
+  .modal-body label {
+    color: #575e65;
+    font-weight: bold;
+  }
+
+  .modal-body .loginBtn {
+    background: #ebc942;
+    width: 100%;
+    border-radius: 2px;
+  }
